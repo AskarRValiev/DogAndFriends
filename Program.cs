@@ -11,13 +11,21 @@ while (distance > 10)
     {
         time = distance/(firstFriendSpeed + dogSpeed);
         friend = 2;
+        //Console.Write("1 frind time: "); //****************
+        //Console.WriteLine(time); //*********************
     }
     else
     {
         time = distance/(secondFriendSpeed + dogSpeed);
         friend = 1;
+       // Console.Write("2 frind time: "); //****************
+       // Console.WriteLine(time); //***********************
     }
     distance = distance - (firstFriendSpeed + secondFriendSpeed)*time;
+    //Console.Write("remaining distance: "); //****************
+    //Console.WriteLine(distance); //*************************
     count++;
+    //Console.Write("counter:  "); //****************
+   // Console.WriteLine(count);//**************************
 }
 Console.WriteLine(count);
